@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Private GPT 개인정보 처리방침</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; margin: 0; color: #102027; background: #f7fafc; }
+    main { max-width: 860px; margin: 0 auto; padding: 44px 20px; }
+    section { background: #fff; border: 1px solid #d9e2ec; border-radius: 12px; padding: 22px; margin: 18px 0; }
+    h1, h2 { line-height: 1.25; }
+    a { color: #0066cc; }
+    .muted { color: #52616b; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>My Private GPT 개인정보 처리방침</h1>
+    <p class="muted">마지막 업데이트: 2026년 6월 6일</p>
+
+    <section>
+      <h2>1. 기본 원칙</h2>
+      <p>My Private GPT는 사용자가 직접 추가한 문서와 텍스트를 기반으로 검색하고 답변하는 개인 문서 검색 앱입니다. 기본 설정은 로컬 모드이며, 이 모드에서는 문서, OCR 결과, 검색 인덱스, 채팅 기록이 사용자 기기 안에 저장됩니다.</p>
+      <p>앱은 광고 추적을 하지 않으며, 추적 목적의 제3자 SDK나 제3자 도메인을 사용하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>2. 저장되는 정보</h2>
+      <p>앱은 사용자가 선택하거나 입력한 문서 파일, 직접 입력한 텍스트, 붙여넣은 텍스트, OCR 결과, 태그, 검색용 chunk, 채팅 기록을 앱 데이터로 저장할 수 있습니다.</p>
+      <p>PIN 또는 비밀번호와 OpenAI API Key는 iOS Keychain에 저장됩니다. 온보딩 완료 여부, 검색 결과 수, chunk 크기 같은 앱 설정은 UserDefaults에 저장됩니다.</p>
+    </section>
+
+    <section>
+      <h2>3. OpenAI 모드</h2>
+      <p>OpenAI Provider를 사용자가 직접 선택하고 API Key를 저장한 경우에만 외부 API를 사용합니다. 이 경우 질문, 검색된 관련 chunk, 임베딩 생성에 필요한 텍스트가 OpenAI API로 전송될 수 있습니다.</p>
+      <p>전체 문서를 무조건 전송하지 않으며, 기본값은 로컬 모드입니다. OpenAI의 개인정보 처리방침은 <a href="https://openai.com/policies/privacy-policy">OpenAI Privacy Policy</a>에서 확인할 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>4. 권한 사용</h2>
+      <p>카메라는 사용자가 촬영한 이미지를 OCR 처리하기 위해 사용합니다. 사진 보관함은 사용자가 선택한 이미지를 OCR 처리하기 위해 사용합니다. Face ID 또는 Touch ID는 앱 잠금 해제에만 사용합니다.</p>
+    </section>
+
+    <section>
+      <h2>5. 데이터 보관 및 삭제</h2>
+      <p>사용자가 앱을 삭제하면 iOS 정책에 따라 앱 데이터가 제거됩니다. 앱 설정에서는 문서, 인덱스, 채팅 데이터를 삭제할 수 있으며, PIN/API Key 포함 민감정보 초기화를 실행하면 Keychain의 앱 민감정보와 온보딩 설정을 초기화합니다.</p>
+    </section>
+
+    <section>
+      <h2>6. 문의</h2>
+      <p>개인정보 처리방침 또는 앱 지원 문의는 <a href="./support.html">지원 페이지</a>를 통해 확인할 수 있습니다.</p>
+    </section>
+  </main>
+</body>
+</html>
